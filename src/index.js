@@ -1,0 +1,46 @@
+import React, { useEffect, useState } from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+
+function App() {
+  const [image, setImage] = useState("");
+  const [explanation, setExpl] = useState("");
+  const [quote, setQuote] = useState("");
+
+  useEffect(() => {
+    // Fetch the NASA image of the day API
+    fetch(
+      "https://api.nasa.gov/planetary/apod?api_key=O4d9QZRjTnrBZsdB4SHXpj61zlIIjpXPsJenvNkl"
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        setImage(data.url);
+        setExpl(data.explanation);
+      })
+      .catch((error) => console.error(error));
+
+    // Fetch the Quotes API with the "inspirational" tag
+    fetch("https://api.quotable.io/random?tags=inspirational")
+      .then((response) => response.json())
+      .then((data) => {
+        setQuote(data.content);
+      })
+      .catch((error) => console.error(error));
+  }, []);
+
+  useEffect(() => {
+    // Update the background image of the body element
+    document.body.style.background = `url(${image}) no-repeat center top fixed`;
+    document.body.style.backgroundSize = "cover";
+  }, [image]);
+
+  return (
+    <div>
+      <p className="quote">{quote}</p>
+      <p className="explanation">{explanation}</p>
+    </div>
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<App />);
