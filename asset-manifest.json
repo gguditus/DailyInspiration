@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/DailyInspiration/static/css/main.b76eec22.css",
+    "main.js": "/DailyInspiration/static/js/main.d75ed546.js",
+    "index.html": "/DailyInspiration/index.html",
+    "main.b76eec22.css.map": "/DailyInspiration/static/css/main.b76eec22.css.map",
+    "main.d75ed546.js.map": "/DailyInspiration/static/js/main.d75ed546.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b76eec22.css",
+    "static/js/main.d75ed546.js"
+  ]
+}
