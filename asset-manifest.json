@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/DailyInspiration/static/css/main.b76eec22.css",
-    "main.js": "/DailyInspiration/static/js/main.d75ed546.js",
+    "main.js": "/DailyInspiration/static/js/main.138317ea.js",
     "index.html": "/DailyInspiration/index.html",
     "main.b76eec22.css.map": "/DailyInspiration/static/css/main.b76eec22.css.map",
-    "main.d75ed546.js.map": "/DailyInspiration/static/js/main.d75ed546.js.map"
+    "main.138317ea.js.map": "/DailyInspiration/static/js/main.138317ea.js.map"
   },
   "entrypoints": [
     "static/css/main.b76eec22.css",
-    "static/js/main.d75ed546.js"
+    "static/js/main.138317ea.js"
   ]
 }
