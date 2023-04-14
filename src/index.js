@@ -19,8 +19,8 @@ function App() {
       })
       .catch((error) => console.error(error));
 
-    // Fetch the Quotes API with the "inspirational" tag
-    fetch("https://api.quotable.io/random?tags=inspirational")
+    // Fetch the Quotes API with the "Inspirational" tag (which are currently case sensitive, but that is listed as a bug on the quotable github)
+    fetch("https://api.quotable.io/random?tags=Inspirational")
       .then((response) => response.json())
       .then((data) => {
         setQuote(data.content);
