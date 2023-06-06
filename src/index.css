@@ -1,3 +1,4 @@
+/*this sets the background to a dark gray. in the event that the nasa api is down for maintanence or other errors*/
 body {
   margin: 0;
   padding: 0;
@@ -9,6 +10,7 @@ body {
   height: 100%;
   font-family: "Cormorant Garamond", serif;
   font-style: italic;
+  background-color: #403d39;
 }
 
 .quote {
